@@ -43,6 +43,11 @@
 <div *ngIf="name() === 'Manuel'">
   My Content
 </div>
+@if (name() === 'Manuel'){
+  <div>
+    soy Manuel con el nuevo if
+  </div>
+}
 
 <div *ngIf="person().name === 'Manuel' && person().age >= 18; else elsebloque">
   Soy Manuel y soy mayor de edad
